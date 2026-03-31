@@ -12,9 +12,9 @@ This the back office of the CabinScape web app which is a luxury cabins booking 
 
 ## Running Steps
 
-1 - Clone the project
-2 - Run pnpm install
-3 - Use your supabase credentials (Optional)
-4 - Run pnpm dev
+1 - Clone the project  
+2 - Run pnpm install  
+3 - Use your supabase credentials (Optional)  
+4 - Run pnpm dev  
 
 
