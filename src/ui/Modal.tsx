@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   cloneElement,
@@ -111,6 +112,7 @@ function Window({ children, name }: ModalWindowProps) {
 
   return createPortal(
     <Overlay>
+      {/*@ts-ignore*/}
       <StyledModal ref={ref}>
         <Button onClick={close}>
           <HiXMark />

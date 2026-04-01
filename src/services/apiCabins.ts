@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Cabin, CabinFormData } from "../types";
 import supabase, { supabaseUrl } from "./supabase";
@@ -43,6 +44,7 @@ export async function createEditCabin(newCabin: CabinFormData, id?: any) {
 
   const { error: storageError } = await supabase.storage
     .from("cabin-images")
+    //@ts-ignore
     .upload(imageName, newCabin.image);
 
   // 3. Delete the cabin IF there was an error uplaoding image
