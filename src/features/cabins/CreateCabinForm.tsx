@@ -40,7 +40,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal } : CreateCabinFormPro
       );
     else
       createCabin(
-        { ...data, image: image },
+        { newCabinData: { ...data, image } },
         {
           onSuccess: () => {
             reset();
